@@ -1,6 +1,6 @@
 
 //якорь
-$('nav').on('click','a', function(event) {
+$('nav, .menu__mobile').on('click','a', function(event) {
   event.preventDefault();
   var id  = $(this).attr('href'),
     top = $(id).offset().top;
@@ -21,4 +21,16 @@ $('.examples__btn').on('click', function() {
   event.preventDefault();
   $(this).fadeOut(100);
   $('.examples--none').slideDown();
+});
+
+
+
+
+$('.menu-open').on('click', function() {
+  $('.menu__mobile').fadeIn();
+  $('.menu--bg').fadeIn();
+});
+$('.menu--bg, .close, .menu__mobile a').on('click', function() {
+  $('.menu__mobile').fadeOut();
+  $('.menu--bg').fadeOut();
 });

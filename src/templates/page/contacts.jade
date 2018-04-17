@@ -2,6 +2,7 @@ section.contacts#contacts
   .container
     .row
       .col-xs-12
+        .contacts--mobile
         form.contacts__call
           a(href="#")
             i.fas.fa-question-circle
@@ -13,31 +14,31 @@ section.contacts#contacts
               i.fas.fa-arrow-alt-circle-right
     .contacts__block  
       .row
-        .col-xs-4
+        .col-sm-4.col-xs-12
           .row
-            .col-xs-12
+            .col-xs-12.center-xs.start-sm
               .contacts__block__logo
                 h2 
                   span reno
                   | comfort
                   p silikonowanie i uszczelnianie
-            .col-xs-6.col-sm-12
+            .col-xs-6.col-sm-12.col-xs-6
               .contacts__block__phon
                 i.fas.fa-phone
                 a(href="tel:0048662202167") 00 48 662 202 167
                 a(href="mailto:info@wroglass.pl") info@wroglass.pl
-            .col-xs-6.col-sm-12
+            .col-xs-6.col-sm-12.col-xs-6
               .contacts__block__location
                 i.fas.fa-map-marker-alt
                 a(href="#") ul. Północna 24/14, Wrocław
                   p Pon. - Piąt.: 9-19
-            .col-sm-12
+            .col-sm-12.col-xs-12
               .contacts__block__social
                 a(href="#")
                   i.icon.icon-facebook
                 a(href="#")
                   i.icon.icon-insta
-        .col-xs-7.col-xs-offset-1
+        .col-sm-7.col-sm-offset-1
           form.form
             input(type="name" placeholder="Imię")
             input(type="email" placeholder="Email")

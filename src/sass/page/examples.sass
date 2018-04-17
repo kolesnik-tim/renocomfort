@@ -9,17 +9,23 @@
     margin-bottom: 15px
     +r(1024)
       min-height: 440px
+    +r(767)
+      min-height: auto
     a
       display: block
       padding: 175px 30px 90px 35px
       +r(1024)
         padding: 125px 15px 60px 35px
+      +r(767)
+        padding: 25px
     h3
       font-size: 32px
       font-weight: 500
       color: $white
       letter-spacing: 0.8px
       position: relative
+      +r(767)
+        padding-right: 100px
       &:before
         content: ''
         position: absolute

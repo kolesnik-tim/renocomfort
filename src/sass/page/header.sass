@@ -3,9 +3,60 @@
   border-bottom: 1px solid $lipstick
   padding: 30px 0
   background: $black
+  +r(767)
+    padding-left: 70px
+    padding-right: 20px
+  .menu-open
+    width: 40px
+    height: 30px
+    padding-top: 15px
+    position: absolute
+    display: inline-block
+    cursor: pointer
+    top: 0px
+    left: -40px
+    transition: all 0.3s
+    display: none
+    +r(767)
+      display: block
+    span
+      width: 25px
+      height: 4px
+      background: $white
+      display: block
+      transition: all 0.3s
+      border-radius: 20%
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        width: 25px
+        height: 4px
+        background: $white
+        transition: all 0.3s
+        top: 6px
+        border-radius: 20%
+      &:after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 2px
+        width: 25px
+        height: 4px
+        background: $white
+        transition: all 0.3s
+        border-radius: 20%
   &__block
     display: flex
+    +r(1024)
+      justify-content: center
+    +r(767)
+      justify-content: flex-start
     &__logo
+      +r(1024)
+        margin-bottom: 40px
+      +r(767)
+        margin-bottom: 0
       h2
         font-family: 'Informal011 BT'
         color: $lipstick-two
@@ -15,6 +66,8 @@
         letter-spacing: 0.9px
         position: relative
         display: inline-block
+        +r(767)
+          font-size: 28px
         span
           color: $white
         p
@@ -24,6 +77,8 @@
           letter-spacing: 0.2px
           position: absolute
           right: 5px
+          +r(767)
+            font-size: 7px
     &__phone
       display: flex
       flex-direction: column
@@ -31,6 +86,16 @@
       padding: 0 45px
       padding-right: 25px
       border-right: 1px solid $lipstick
+      +r(767)
+        display: none
+      &--mobile
+        display: none
+        i
+          color: $lipstick-two
+          font-size: 26px
+        +r(767)
+          display: block
+        
       i
         position: absolute
         color: $lipstick-two
@@ -54,6 +119,8 @@
       flex-direction: column
       position: relative
       padding-left: 70px
+      +r(767)
+        display: none
       i
         position: absolute
         color: $lipstick-two
@@ -72,14 +139,19 @@
           padding-top: 5px
           transition: all 0.3s
     &__btn
+      +r(767)
+        display: none
       a
         padding: 15px 17px
         background: $lipstick
         display: inline-block
         color: $white
-        font-size: 16px
+        font-size: 15px
         line-height: 1.07
         border: 1px solid $lipstick-two
+        +r(1130)
+          width: 165px
+          padding: 15px 10px
         &:hover
           color: $lipstick-two
           background: none
@@ -88,15 +160,112 @@
         i
           padding-right: 10px
 .header-toolbar
+  &--mobile
+    display: none
+    position: absolute
+    left: 85px
+    +r(767)
+      display: block
+  &__phone
+    padding: 12px 0
+    a
+      font-size: 14px
+      color: $white
+      i
+        color: $lipstick-two
+        font-size: 15px
+        padding-right: 10px
+  &__location
+    a
+      font-size: 14px
+      color: $white
+      i
+        color: $lipstick-two
+        font-size: 15px
+        padding-right: 10px
   nav
     position: absolute
-  a
-    color: $white
-    font-size: 16px
-    font-weight: 500
-    padding: 20px 0
-    padding-right: 50px
-    display: inline-block
-    text-transform: uppercase
-    &:hover
-      color: $lipstick-two
+    +r(767)
+      display: none
+    a
+      color: $white
+      font-size: 16px
+      font-weight: 500
+      padding: 20px 0
+      padding-right: 50px
+      display: inline-block
+      text-transform: uppercase
+      &:hover
+        color: $lipstick-two
+
+
+
+
+
+
+.menu--bg
+  position: fixed
+  left: 0
+  top: 0
+  background: rgba(0, 0, 0, 0.8)
+  width: 100%
+  height: 100%
+  z-index: 998
+  display: none
+.menu__mobile
+  position: fixed
+  left: 0
+  width: 300px
+  height: 100%
+  display: none
+  background: $white
+  z-index: 999
+  top: 0
+  box-shadow: 5px 0px 15px 0 #000000
+  ul
+    padding: 40px
+    padding-left: 50px
+    padding-top: 60px
+    li
+      font-size: 23px
+      padding-bottom: 20px
+      a
+        color: $black
+  .close
+    position: absolute
+    top: 20px
+    right: 20px
+    width: 40px
+    height: 40px
+    span
+      width: 0
+      height: 4px
+      background: $black
+      display: block
+      transition: color 0.3s
+      transition: width 0.5s ease
+      border-radius: 20%
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        width: 35px
+        height: 4px
+        background: $black
+        transition: color 0.3s
+        transition: transform 0.5s
+        top: 14px
+        border-radius: 20%
+        transform: rotate(225deg)
+      &:after
+        content: ''
+        transform: rotate(315deg)
+        position: absolute
+        left: 0
+        bottom: 22px
+        width: 35px
+        height: 4px
+        background: $black
+        transition: color 0.3s
+        transition: transform 0.5s
+        border-radius: 20%
