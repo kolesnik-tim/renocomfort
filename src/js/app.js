@@ -9,14 +9,14 @@ $('nav, .menu__mobile').on('click','a', function(event) {
   
 
 //дополнительные 
-//offers
+////offers
 
 $('.offers__btn').on('click', function() {
   event.preventDefault();
   $(this).fadeOut(100);
   $('.offers--none').slideDown();
 });
-//
+////examples
 $('.examples__btn').on('click', function() {
   event.preventDefault();
   $(this).fadeOut(100);
@@ -25,7 +25,7 @@ $('.examples__btn').on('click', function() {
 
 
 
-
+//menu-open
 $('.menu-open').on('click', function() {
   $('.menu__mobile').fadeIn();
   $('.menu--bg').fadeIn();
