@@ -14,7 +14,7 @@
     top: -55px
     display: none
     +r(767)
-      display: block
+      display: flex
     a
       padding: 15px 17px
       background: $lipstick
@@ -78,6 +78,10 @@
     padding-right: 10px
     +r(767)
       padding: 0 10px
+    .col-xs-6.col-sm-12.col-xs-6
+      +r(440)
+        max-width: 100%
+        flex-basis: 100%
     &__logo
       padding-bottom: 50px
       h2
@@ -111,6 +115,8 @@
         border-bottom: none
       +r(565)
         padding-bottom: 18px
+      +r(440)
+        border: none
       i
         position: absolute
         color: $blue-green
@@ -147,6 +153,8 @@
         top: 4px
         +r(767)
           left: 7px
+        +r(440)
+          left: 0
       a
         font-size: 20px
         color: $charcoal-grey
@@ -168,6 +176,9 @@
         padding-left: 45px
       +r(565)
         top: -43px
+      +r(440)
+        top: -15px
+        padding-bottom: 20px
       i
         color: $greyish
         font-size: 26px
