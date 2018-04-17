@@ -1,3 +1,53 @@
 .examples
-  background: url('../img/examples--bg.png') no-repeat
-  background-size: cover
+  &--none
+    display: none
+    margin-bottom: 50px
+  &__block
+    background-repeat: no-repeat
+    background-size: cover
+    min-height: 470px
+    margin-bottom: 15px
+    +r(1024)
+      min-height: 440px
+    a
+      display: block
+      padding: 175px 30px 90px 35px
+      +r(1024)
+        padding: 125px 15px 60px 35px
+    h3
+      font-size: 32px
+      font-weight: 500
+      color: $white
+      letter-spacing: 0.8px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: -10px
+        top: 6px
+        height: 62px
+        width: 5px
+        background: $lipstick
+    span
+      display: block
+      color: $pinkish-grey
+      font-size: 32px
+      font-weight: 500
+      letter-spacing: 0.8px
+    p
+      font-size: 18px
+      font-weight: 500
+      color: $white
+      padding-top: 30px
+  &__btn
+    padding-top: 40px
+    padding-bottom: 90px
+    a
+      color: $lipstick-three
+      font-size: 20.1px
+      font-weight: 500
+      display: block
+      padding-bottom: 15px
+    i
+      font-size: 26.2px
+      color: $lipstick-three

@@ -1,0 +1,43 @@
+.reviews
+  background: rgba(255, 255, 255, 0.75)
+  padding-bottom: 130px
+  padding-top: 70px
+  &__block
+    padding: 35px
+    border-radius: 5px
+    background-color: $pale-grey-two
+    position: relative
+    +r(1024)
+      padding: 30px
+    &:before
+      content: ''
+      width: 0
+      height: 0
+      border-left: 20px solid transparent
+      border-right: 20px solid transparent
+      border-top: 40px solid $pale-grey-two
+      position: absolute
+      bottom: -20px
+      left: 20px
+      transform: rotate(20deg)
+    i
+      color: $lipstick-two
+      font-size: 26px
+    h4 
+      font-size: 26px
+      font-weight: 500
+      padding: 25px 0
+      color: $charcoal-grey
+    p
+      font-size: 14px
+      font-weight: 500
+      padding-right: 40px
+      color: $battleship-grey
+    span
+      text-align: right
+      display: block
+      font-style: italic
+      font-size: 16px
+      font-weight: 500
+      color: $battleship-grey
+      padding-top: 30px

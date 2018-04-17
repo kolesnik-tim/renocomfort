@@ -40,11 +40,15 @@
       a
         font-weight: normal
         color: $gunmetal
+        &:hover
+          color: $lipstick-two
       a:nth-child(2)
         font-size: 16px
         font-weight: 500
         color: $silver
         padding-bottom: 5px
+        &:hover
+          color: $lipstick-two
     &__location
       display: flex
       flex-direction: column
@@ -59,9 +63,14 @@
       a
         font-size: 16px
         color: $cool-grey
+        &:hover
+          color: $lipstick-two
+          p
+            color: $lipstick-two
         p
           color: $gunmetal
           padding-top: 5px
+          transition: all 0.3s
     &__btn
       a
         padding: 15px 17px
@@ -70,6 +79,12 @@
         color: $white
         font-size: 16px
         line-height: 1.07
+        border: 1px solid $lipstick-two
+        &:hover
+          color: $lipstick-two
+          background: none
+          i
+            color: $lipstick-two
         i
           padding-right: 10px
 .header-toolbar
@@ -83,3 +98,5 @@
     padding-right: 50px
     display: inline-block
     text-transform: uppercase
+    &:hover
+      color: $lipstick-two

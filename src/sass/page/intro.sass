@@ -2,6 +2,8 @@
   background: url('../img/intro--bg.png') no-repeat
   background-size: cover
   padding-top: 340px
+  +r(1024)
+    padding-top: 200px
   &__logo
     display: flex
     justify-content: center
@@ -22,6 +24,8 @@
   &__text
     padding-bottom: 300px
     padding-top: 60px
+    +r(1024)
+      padding-bottom: 150px
     h1
       font-size: 64.1px
       font-weight: 500
@@ -33,9 +37,12 @@
       font-weight: 500
       color: $white
   &__btn
+    +r(1024)
+      padding: 0 110px
     a
       padding: 22px 55px
       padding-left: 90px
+      width: 100%
       font-size: 25.3px
       color: $white
       text-transform: uppercase
@@ -43,6 +50,8 @@
       background: rgba(0, 0, 0, 0.5)
       position: relative
       margin: 0 7px
+      +r(1024)
+        margin-bottom: 10px
       &:before
         content: ''
         position: absolute
@@ -51,9 +60,18 @@
         height: 10px
         background: $lipstick
         left: 0
+        +r(1024)
+          display: none
       i
         position: absolute
         left: 25px
         top: 35px
         font-size: 32px
         color: $lipstick
+        +r(1024)
+          top: 22px
+    &--last
+      margin-bottom: 0 !important
+      &:before
+        +r(1024)
+          display: block !important

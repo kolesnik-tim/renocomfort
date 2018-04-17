@@ -1,4 +1,4 @@
-section.offers
+section.offers#offers
   .container
     .row.center-xs
       .col-xs-12
@@ -48,22 +48,44 @@ section.offers
             p uszczelnianie schodow
       .col-xs-12
         .offers__btn
-          a(href="#") wszystkie oferty
+          a(href="#offers--none" data-all) wszystkie oferty
           i.fas.fa-angle-down
+    .offers--none
+      .row.center-xs
+        .col-xs-3
+          .offers__block
+            a(href="#")
+              img(src="img/offers-5.png", alt="")
+              p uszczelnianie urzadzen sanitarnych
+        .col-xs-3
+          .offers__block
+            a(href="#")
+              img(src="img/offers-6.png", alt="")
+              p uszczelnienia plyt betonowych
+        .col-xs-3
+          .offers__block
+            a(href="#")
+              img(src="img/offers-7.png", alt="")
+              p uszczelnianie fasad szklanych
+        .col-xs-3
+          .offers__block
+            a(href="#")
+              img(src="img/offers-8.png", alt="")
+              p uszczelnianie schodow
   .offers__img
     .container
       .row
-        .col-xs-4
+        .col-md-4.col-xs-12
           .offers__img__block.offers__img__block--1
             i.fas.fa-building
             span 780
             p zrealizowanych projektów
-        .col-xs-4
+        .col-md-4.col-xs-12
           .offers__img__block.offers__img__block--2
             i.fas.fa-users
             span 356
             p zadowolonych klientów
-        .col-xs-4
+        .col-md-4.col-xs-12
           .offers__img__block.offers__img__block--3
             i.fas.fa-address-card
             span 12

@@ -1,5 +1,8 @@
 .offers
   padding: 95px 0
+  background: #fcfcfc
+  &--none
+    display: none
   &__block
     height: 100%
     a
@@ -19,7 +22,7 @@
         color: $greyish-brown-two
         padding-bottom: 30px 
         transition: all 0.3s
-        width: 210px
+        max-width: 210px
   &__btn
     padding-top: 40px
     padding-bottom: 90px
@@ -39,6 +42,8 @@
     height: 555px
     max-width: 1920px
     margin: 0 auto
+    .row
+      height: auto
     &__block
       display: flex
       align-items: center
@@ -49,12 +54,23 @@
       padding-left: 15px
       position: relative
       margin-top: 262px
+      +r(1024)
+        margin-top: 0
+        left: 50%
+        transform: translate(-50%)
+        margin-left: 3px
       &--1
         left: 126px
+        +r(1024)
+          margin-top: 134px
       &--2
         left: 62px
+        +r(1024)
+          margin-top: 68px
       &--3
         right: 3px
+        +r(1024)
+          margin-top: 69px
       i
         padding: 6px
         background: $white
