@@ -73,6 +73,8 @@
   &__block
     padding-left: 35px
     padding-right: 10px
+    +r(767)
+      padding: 0 10px
     &__logo
       padding-bottom: 50px
       h2
@@ -101,9 +103,11 @@
       padding-bottom: 30px
       border-bottom: 1px solid $blue-green
       +r(767)
-        padding-bottom: 18px
+        padding-bottom: 5px
         border-right: 1px solid $blue-green
         border-bottom: none
+      +r(565)
+        padding-bottom: 18px
       i
         position: absolute
         color: $blue-green
@@ -157,8 +161,10 @@
       padding-left: 35px
       +r(767)
         position: relative
-        top: -43px
+        top: -25px
         padding-left: 45px
+      +r(565)
+        top: -43px
       i
         color: $greyish
         font-size: 26px
