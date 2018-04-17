@@ -3,6 +3,25 @@
   background-size: cover
   border-top: 1px solid $blue-green
   padding-bottom: 100px
+  +r(767)
+    padding-top: 30px
+    border-top: 1px solid $lipstick
+    padding-bottom: 0
+  &--mobile
+    display: flex
+    justify-content: center
+    position: relative
+    top: -55px
+    a
+      padding: 15px 17px
+      background: $lipstick
+      display: inline-block
+      color: $white
+      font-size: 16px
+      line-height: 1.07
+      border: 1px solid $lipstick-two
+      i
+        padding-right: 10px
   &__call
     padding: 20px 15px
     padding-left: 35px
@@ -81,6 +100,10 @@
       padding-left: 45px
       padding-bottom: 30px
       border-bottom: 1px solid $blue-green
+      +r(767)
+        padding-bottom: 18px
+        border-right: 1px solid $blue-green
+        border-bottom: none
       i
         position: absolute
         color: $blue-green
@@ -91,6 +114,8 @@
         font-weight: normal
         color: $gunmetal
         font-size: 20px
+        +r(767)
+          font-size: 16px !important
         &:hover
           color: $blue-green
       a:nth-child(2)
@@ -105,15 +130,21 @@
       padding-left: 45px
       margin-top: 30px
       padding-bottom: 35px
+      +r(767)
+        margin: 0
       i
         position: absolute
         color: $blue-green
         font-size: 28px
         left: 0px
         top: 4px
+        +r(767)
+          left: 7px
       a
         font-size: 20px
         color: $charcoal-grey
+        +r(767)
+          font-size: 16px
         &:hover
           color: $blue-green
           p
@@ -124,6 +155,10 @@
           transition: all 0.3s
     &__social
       padding-left: 35px
+      +r(767)
+        position: relative
+        top: -43px
+        padding-left: 45px
       i
         color: $greyish
         font-size: 26px
