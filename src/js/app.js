@@ -1,4 +1,5 @@
 import './lib/maskedinput';
+import './import/discovery';
 
 //mask
 $('#phone').mask('99 99999 99 999');
@@ -11,24 +12,6 @@ $('nav, .menu__mobile').on('click','a', function(event) {
   $('body,html').animate({scrollTop: top}, 1500);
 });
   
-
-//дополнительные блоки
-////offers
-
-$('.offers__btn').on('click', function() {
-  event.preventDefault();
-  $(this).fadeOut(100);
-  $('.offers--none').slideDown();
-});
-////examples
-$('.examples__btn').on('click', function() {
-  event.preventDefault();
-  $(this).fadeOut(100);
-  $('.examples--none').slideDown();
-});
-
-
-
 //menu-open
 $('.menu-open').on('click', function() {
   $('.menu__mobile').fadeIn();
