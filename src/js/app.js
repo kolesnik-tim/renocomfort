@@ -1,5 +1,6 @@
 import './lib/maskedinput';
 import './import/discovery';
+import './import/animate';
 
 //mask
 $('#phone').mask('99 99999 99 999');
