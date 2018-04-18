@@ -1,3 +1,7 @@
+import './lib/maskedinput';
+
+//mask
+$('#phone').mask('99 99999 99 999');
 
 //якорь
 $('nav, .menu__mobile').on('click','a', function(event) {
@@ -8,7 +12,7 @@ $('nav, .menu__mobile').on('click','a', function(event) {
 });
   
 
-//дополнительные 
+//дополнительные блоки
 ////offers
 
 $('.offers__btn').on('click', function() {
