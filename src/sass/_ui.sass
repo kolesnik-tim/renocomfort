@@ -63,7 +63,46 @@ a
 			font-size: 15px
 			padding: 0 10px
 			padding-bottom: 35px
-
+	&--reviews
+		h2
+			background: none
+			display: block
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: 25px
+				height: 1px
+				width: 100%
+				max-width: 360px
+				background: $blue-green
+				+r(1100)
+					max-width: 330px
+				+r(1024)
+					max-width: 250px
+				+r(870)
+					max-width: 200px
+				+r(767)
+					display: none
+			&:after
+				content: ''
+				position: absolute
+				right: 0
+				top: 25px
+				height: 1px
+				width: 100%
+				max-width: 360px
+				background: $blue-green
+				+r(1100)
+					max-width: 330px
+				+r(1024)
+					max-width: 250px
+				+r(870)
+					max-width: 200px
+				+r(767)
+					display: none
+		.heading__line
+			display: none
 input::-webkit-inner-spin-button, input::-webkit-outer-spin-button
 	-webkit-appearance: none
 	margin: 0
