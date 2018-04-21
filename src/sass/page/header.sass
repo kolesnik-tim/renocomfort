@@ -4,7 +4,7 @@
   padding: 30px 0
   background: $black
   &__page
-    background: linear-gradient(45deg, #212626 0%, #2e3636 30%, #2e3636 50%, #2e3636 70%, #212626 100%)
+    background-image: linear-gradient(to right, #212525, #2e3636 50%, #212525)
   +r(767)
     padding-left: 70px
     padding-right: 20px
@@ -119,13 +119,13 @@
         top: 7px
       a
         font-weight: normal
-        color: $gunmetal
+        color: $silver
         &:hover
           color: $lipstick-two
       a:nth-child(2)
         font-size: 16px
         font-weight: 500
-        color: $silver
+        color: $gunmetal
         padding-bottom: 5px
         &:hover
           color: $lipstick-two
@@ -175,9 +175,7 @@
         i
           padding-right: 10px
 .toolbar
-  background: url('../img/contener--bg.png') no-repeat
-  background-size: cover
-  
+  background: #fbfbfb
   nav
     a
       color: $black !important
