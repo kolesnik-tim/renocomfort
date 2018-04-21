@@ -165,11 +165,25 @@
             color: $lipstick-two
         i
           padding-right: 10px
+.toolbar
+  nav 
+    a
+      color: $black !important
+      &:hover
+        color: $lipstick-two !important
+    li:nth-child(2) a
+      border-bottom: 1px solid $lipstick-two
+      color: $lipstick-two !important
+  .header-toolbar__location a, .header-toolbar__phone a
+    +r(767)
+      color: $black !important
 .header-toolbar
   &--mobile
     display: none
     position: absolute
     left: 85px
+    z-index: 9
+    top: 90px
     +r(767)
       display: block
     +r(440)
@@ -198,13 +212,14 @@
       display: none
     li
       display: inline-block
+      padding: 20px 0
+      padding-right: 50px
     a
       color: $white
       font-size: 16px
       font-weight: 500
-      padding: 20px 0
-      padding-right: 50px
       display: inline-block
       text-transform: uppercase
+      padding-bottom: 4px
       &:hover
         color: $lipstick-two
