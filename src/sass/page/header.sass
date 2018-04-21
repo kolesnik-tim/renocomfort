@@ -166,7 +166,10 @@
         i
           padding-right: 10px
 .toolbar
-  nav 
+  background: url('../img/contener--bg.png') no-repeat
+  background-size: cover
+  
+  nav
     a
       color: $black !important
       &:hover
@@ -178,6 +181,9 @@
     +r(767)
       color: $black !important
 .header-toolbar
+  width: 100%
+  position: absolute
+  z-index: 12
   &--mobile
     display: none
     position: absolute
@@ -206,8 +212,6 @@
         font-size: 15px
         padding-right: 10px
   nav
-    position: absolute
-    z-index: 12
     +r(767)
       display: none
     li
